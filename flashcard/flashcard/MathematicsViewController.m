@@ -23,7 +23,7 @@
     self.title = @"Mathematics";
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 30)];
-    [leftButton addTarget:self action:@selector(onTouchRightItem:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButton addTarget:self action:@selector(onTouchLeftItem:) forControlEvents:UIControlEventTouchUpInside];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"PreviousIcon"] forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     
@@ -38,6 +38,7 @@
 }
 
 - (void)onTouchLeftItem:(id)sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
