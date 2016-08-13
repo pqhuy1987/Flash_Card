@@ -95,10 +95,49 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="fe6-Ey-n7C" kind="show" identifier="MainView" animates="NO" id="fTI-Fu-Vfk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="389"/>
+            <point key="canvasLocation" x="-616" y="-272"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vsp-Ic-MAw">
+            <objects>
+                <navigationController id="fe6-Ey-n7C" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sge-6n-SU6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6wU-sa-R4L" kind="relationship" relationship="rootViewController" id="wTI-Eo-3q9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0KU-21-NIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="-272"/>
+        </scene>
+        <!--Mathematics View Controller-->
+        <scene sceneID="YpP-4P-Emm">
+            <objects>
+                <viewController id="6wU-sa-R4L" customClass="MathematicsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fca-qF-CM3"/>
+                        <viewControllerLayoutGuide type="bottom" id="VRO-lv-Uha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rd8-nC-IOW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vVB-6p-Rbi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJw-97-WTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="-272"/>
         </scene>
     </scenes>
     <resources>
