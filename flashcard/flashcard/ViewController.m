@@ -25,6 +25,14 @@
 
 //The event handling method
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    //Effect to present view
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    
     [self performSegueWithIdentifier:@"MainView" sender:nil];
 }
 
