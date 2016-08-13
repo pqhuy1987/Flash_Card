@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "flashcard/ViewController.m"
-            timestampString = "492714938.951697"
+            timestampString = "492799044.173538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-handleSingleTap:"
             landmarkType = "5">
          </BreakpointContent>
