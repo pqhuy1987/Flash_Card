@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  FirstViewController.m
 //  flashcard
 //
 //  Created by Pham Quang Huy on 8/12/16.
 //  Copyright © 2016 pqhuy1987. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
