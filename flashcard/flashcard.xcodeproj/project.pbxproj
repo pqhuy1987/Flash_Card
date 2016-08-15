@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		123A60761D5CEC3D00CECCEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A60751D5CEC3D00CECCEC /* main.m */; };
 		123A60791D5CEC3D00CECCEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A60781D5CEC3D00CECCEC /* AppDelegate.m */; };
-		123A607C1D5CEC3D00CECCEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A607B1D5CEC3D00CECCEC /* ViewController.m */; };
+		123A607C1D5CEC3D00CECCEC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A607B1D5CEC3D00CECCEC /* FirstViewController.m */; };
 		123A607F1D5CEC3D00CECCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A607D1D5CEC3D00CECCEC /* Main.storyboard */; };
 		123A60811D5CEC3D00CECCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123A60801D5CEC3D00CECCEC /* Assets.xcassets */; };
 		123A60841D5CEC3D00CECCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A60821D5CEC3D00CECCEC /* LaunchScreen.storyboard */; };
 		123A608F1D5CEC3D00CECCEC /* flashcardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A608E1D5CEC3D00CECCEC /* flashcardTests.m */; };
 		123A609A1D5CEC3E00CECCEC /* flashcardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A60991D5CEC3E00CECCEC /* flashcardUITests.m */; };
+		97903DA71D60D6CF00FF348E /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 97903DA61D60D6CF00FF348E /* Help.m */; };
 		97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +41,8 @@
 		123A60751D5CEC3D00CECCEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		123A60771D5CEC3D00CECCEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		123A60781D5CEC3D00CECCEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		123A607A1D5CEC3D00CECCEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		123A607B1D5CEC3D00CECCEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		123A607A1D5CEC3D00CECCEC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		123A607B1D5CEC3D00CECCEC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		123A607E1D5CEC3D00CECCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		123A60801D5CEC3D00CECCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123A60831D5CEC3D00CECCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,8 @@
 		123A60951D5CEC3E00CECCEC /* flashcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flashcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123A60991D5CEC3E00CECCEC /* flashcardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flashcardUITests.m; sourceTree = "<group>"; };
 		123A609B1D5CEC3E00CECCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97903DA51D60D6CF00FF348E /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
+		97903DA61D60D6CF00FF348E /* Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help.m; sourceTree = "<group>"; };
 		97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathematicsViewController.h; sourceTree = "<group>"; };
 		97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathematicsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,10 +146,12 @@
 		97D79A661D5E46930027F5A5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				123A607A1D5CEC3D00CECCEC /* ViewController.h */,
-				123A607B1D5CEC3D00CECCEC /* ViewController.m */,
+				123A607A1D5CEC3D00CECCEC /* FirstViewController.h */,
+				123A607B1D5CEC3D00CECCEC /* FirstViewController.m */,
 				97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */,
 				97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */,
+				97903DA51D60D6CF00FF348E /* Help.h */,
+				97903DA61D60D6CF00FF348E /* Help.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,7 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123A607C1D5CEC3D00CECCEC /* ViewController.m in Sources */,
+				97903DA71D60D6CF00FF348E /* Help.m in Sources */,
+				123A607C1D5CEC3D00CECCEC /* FirstViewController.m in Sources */,
 				97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */,
 				123A60791D5CEC3D00CECCEC /* AppDelegate.m in Sources */,
 				123A60761D5CEC3D00CECCEC /* main.m in Sources */,

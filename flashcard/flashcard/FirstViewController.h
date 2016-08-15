@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  flashcard
 //
 //  Created by Pham Quang Huy on 8/12/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FirstViewController : UIViewController
 
 
 @end

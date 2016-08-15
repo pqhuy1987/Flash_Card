@@ -6,8 +6,9 @@
 //  Copyright © 2016 pqhuy1987. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MathematicsViewController : ViewController
+@interface MathematicsViewController : UIViewController
+
 
 @end
