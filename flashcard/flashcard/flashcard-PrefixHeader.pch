@@ -1,0 +1,14 @@
+//
+//  flashcard-PrefixHeader.pch
+//  flashcard
+//
+//  Created by TUNG on 8/17/16.
+//  Copyright © 2016 pqhuy1987. All rights reserved.
+//
+
+#ifndef flashcard_PrefixHeader_pch
+#define flashcard_PrefixHeader_pch
+
+#import "Help.h"
+
+#endif /* flashcard_PrefixHeader_pch */

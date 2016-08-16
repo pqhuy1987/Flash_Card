@@ -16,6 +16,9 @@
 		123A608F1D5CEC3D00CECCEC /* flashcardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A608E1D5CEC3D00CECCEC /* flashcardTests.m */; };
 		123A609A1D5CEC3E00CECCEC /* flashcardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A60991D5CEC3E00CECCEC /* flashcardUITests.m */; };
 		97903DA71D60D6CF00FF348E /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 97903DA61D60D6CF00FF348E /* Help.m */; };
+		97A44FD31D622E7700CC8722 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD21D622E7700CC8722 /* SWRevealViewController.m */; };
+		97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD51D62304900CC8722 /* MenuViewController.m */; };
+		97A44FDA1D623A1200CC8722 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */; };
 		97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +56,15 @@
 		123A60951D5CEC3E00CECCEC /* flashcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flashcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123A60991D5CEC3E00CECCEC /* flashcardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flashcardUITests.m; sourceTree = "<group>"; };
 		123A609B1D5CEC3E00CECCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		974DF3351D638E7A00EA39FE /* flashcard-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "flashcard-PrefixHeader.pch"; sourceTree = "<group>"; };
 		97903DA51D60D6CF00FF348E /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
 		97903DA61D60D6CF00FF348E /* Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help.m; sourceTree = "<group>"; };
+		97A44FD11D622E7700CC8722 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		97A44FD21D622E7700CC8722 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		97A44FD41D62304900CC8722 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		97A44FD51D62304900CC8722 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		97A44FD81D623A1200CC8722 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathematicsViewController.h; sourceTree = "<group>"; };
 		97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathematicsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +120,7 @@
 				97D79A681D5E46C30027F5A5 /* App */,
 				97D79A691D5E46D10027F5A5 /* Storyboard */,
 				97D79A661D5E46930027F5A5 /* Controller */,
+				97A44FD71D6239E200CC8722 /* View */,
 				123A60801D5CEC3D00CECCEC /* Assets.xcassets */,
 				123A60851D5CEC3D00CECCEC /* Info.plist */,
 				123A60741D5CEC3D00CECCEC /* Supporting Files */,
@@ -121,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				123A60751D5CEC3D00CECCEC /* main.m */,
+				974DF3351D638E7A00EA39FE /* flashcard-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,13 +155,34 @@
 			path = flashcardUITests;
 			sourceTree = "<group>";
 		};
+		97A44FD01D622E6000CC8722 /* SWRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				97A44FD11D622E7700CC8722 /* SWRevealViewController.h */,
+				97A44FD21D622E7700CC8722 /* SWRevealViewController.m */,
+			);
+			name = SWRevealController;
+			sourceTree = "<group>";
+		};
+		97A44FD71D6239E200CC8722 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97A44FD81D623A1200CC8722 /* MenuTableViewCell.h */,
+				97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		97D79A661D5E46930027F5A5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				97A44FD01D622E6000CC8722 /* SWRevealController */,
 				123A607A1D5CEC3D00CECCEC /* FirstViewController.h */,
 				123A607B1D5CEC3D00CECCEC /* FirstViewController.m */,
 				97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */,
 				97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */,
+				97A44FD41D62304900CC8722 /* MenuViewController.h */,
+				97A44FD51D62304900CC8722 /* MenuViewController.m */,
 				97903DA51D60D6CF00FF348E /* Help.h */,
 				97903DA61D60D6CF00FF348E /* Help.m */,
 			);
@@ -311,7 +344,10 @@
 				123A607C1D5CEC3D00CECCEC /* FirstViewController.m in Sources */,
 				97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */,
 				123A60791D5CEC3D00CECCEC /* AppDelegate.m in Sources */,
+				97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */,
 				123A60761D5CEC3D00CECCEC /* main.m in Sources */,
+				97A44FDA1D623A1200CC8722 /* MenuTableViewCell.m in Sources */,
+				97A44FD31D622E7700CC8722 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/flashcard-PrefixHeader.pch";
 				INFOPLIST_FILE = flashcard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -468,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/flashcard-PrefixHeader.pch";
 				INFOPLIST_FILE = flashcard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
