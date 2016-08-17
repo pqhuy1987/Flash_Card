@@ -9,12 +9,13 @@
 #import "MathematicsViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "Help.h"
+#import "SWRevealViewController.h"
 
 #define LARGE_BUTTON_SIZE 80
 #define SMALL_BUTTON_SIZE 60
 #define MEDIUM_BUTTON_SIZE 70
 
-@interface MathematicsViewController ()
+@interface MathematicsViewController () <SWRevealViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -41,6 +42,9 @@
     [rightButton addTarget:self action:@selector(onTouchRightItem:) forControlEvents:UIControlEventTouchUpInside];
     [rightButton setBackgroundImage:[UIImage imageNamed:@"menu-alt-512"] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    
+    self.revealViewController.delegate = self;
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void) setupContentView {
@@ -105,11 +109,8 @@
 }
 
 - (void)onTouchRightItem:(id)sender {
-    UIView *menuView = [[UIView alloc] init];
-    menuView.frame = CGRectMake(self.view.frame.size.width - self.view.frame.size.width/2, self.view.frame.origin.y, self.view.frame.size.width/2, self.view.frame.size.height);
-    menuView.backgroundColor = [UIColor blueColor];
-    
 
+    [self.revealViewController rightRevealToggle:nil];
 }
 
 - (void)onTouchLeftItem:(id)sender {
