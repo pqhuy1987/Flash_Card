@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "MenuTableViewCell.h"
+#import "SWRevealViewController.h"
 
 #define NORMAL_TABLE_CELL_HEIGHT        50
 #define HEADER_TABLE__HEIGHT            40
@@ -103,6 +104,9 @@ typedef enum {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
     [headerView setBackgroundColor:UIColorFromRGB(0x19A6FF)];
     return headerView;
+}
+- (IBAction)onTouchBackButton:(id)sender {
+    [self.revealViewController rightRevealToggle:nil];
 }
 
 @end

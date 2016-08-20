@@ -15,6 +15,8 @@
 #define SMALL_BUTTON_SIZE 60
 #define MEDIUM_BUTTON_SIZE 70
 
+#define ALGEBRA_SEGUE   @"algebraSegue"
+
 @interface MathematicsViewController () <SWRevealViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -31,6 +33,7 @@
 
 - (void)setupView {
     self.title = @"Mathematics";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 25)];
     [leftButton addTarget:self action:@selector(onTouchLeftItem:) forControlEvents:UIControlEventTouchUpInside];
@@ -131,7 +134,7 @@
 }
 
 - (void)algebraButtonDidTap:(UIButton*)tappedButton{
-    
+    [self performSegueWithIdentifier:ALGEBRA_SEGUE sender:nil];
 }
 
 - (void)analysisButtonDidTap:(UIButton*)tappedButton{
@@ -158,6 +161,10 @@
 }
 - (void)kdButtonDidTap:(UIButton*)tappedButton{
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   
 }
 
 
