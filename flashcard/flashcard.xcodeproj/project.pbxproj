@@ -15,6 +15,11 @@
 		123A60841D5CEC3D00CECCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A60821D5CEC3D00CECCEC /* LaunchScreen.storyboard */; };
 		123A608F1D5CEC3D00CECCEC /* flashcardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A608E1D5CEC3D00CECCEC /* flashcardTests.m */; };
 		123A609A1D5CEC3E00CECCEC /* flashcardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A60991D5CEC3E00CECCEC /* flashcardUITests.m */; };
+		4A92B86D1D685A8000ED3CE3 /* AlgebraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A92B86C1D685A8000ED3CE3 /* AlgebraViewController.m */; };
+		4A92B8721D686E9D00ED3CE3 /* learnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A92B8711D686E9D00ED3CE3 /* learnViewController.m */; };
+		4A92B8751D686EB700ED3CE3 /* cardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A92B8741D686EB700ED3CE3 /* cardsViewController.m */; };
+		4A92B8781D686EC300ED3CE3 /* quizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A92B8771D686EC300ED3CE3 /* quizViewController.m */; };
+		4A92B87B1D686ED100ED3CE3 /* ebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A92B87A1D686ED100ED3CE3 /* ebookViewController.m */; };
 		97903DA71D60D6CF00FF348E /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 97903DA61D60D6CF00FF348E /* Help.m */; };
 		97A44FD31D622E7700CC8722 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD21D622E7700CC8722 /* SWRevealViewController.m */; };
 		97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD51D62304900CC8722 /* MenuViewController.m */; };
@@ -56,6 +61,16 @@
 		123A60951D5CEC3E00CECCEC /* flashcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flashcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123A60991D5CEC3E00CECCEC /* flashcardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flashcardUITests.m; sourceTree = "<group>"; };
 		123A609B1D5CEC3E00CECCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A92B86B1D685A8000ED3CE3 /* AlgebraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgebraViewController.h; sourceTree = "<group>"; };
+		4A92B86C1D685A8000ED3CE3 /* AlgebraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgebraViewController.m; sourceTree = "<group>"; };
+		4A92B8701D686E9D00ED3CE3 /* learnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = learnViewController.h; sourceTree = "<group>"; };
+		4A92B8711D686E9D00ED3CE3 /* learnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = learnViewController.m; sourceTree = "<group>"; };
+		4A92B8731D686EB700ED3CE3 /* cardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cardsViewController.h; sourceTree = "<group>"; };
+		4A92B8741D686EB700ED3CE3 /* cardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardsViewController.m; sourceTree = "<group>"; };
+		4A92B8761D686EC300ED3CE3 /* quizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizViewController.h; sourceTree = "<group>"; };
+		4A92B8771D686EC300ED3CE3 /* quizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quizViewController.m; sourceTree = "<group>"; };
+		4A92B8791D686ED100ED3CE3 /* ebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebookViewController.h; sourceTree = "<group>"; };
+		4A92B87A1D686ED100ED3CE3 /* ebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebookViewController.m; sourceTree = "<group>"; };
 		974DF3351D638E7A00EA39FE /* flashcard-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "flashcard-PrefixHeader.pch"; sourceTree = "<group>"; };
 		97903DA51D60D6CF00FF348E /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
 		97903DA61D60D6CF00FF348E /* Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help.m; sourceTree = "<group>"; };
@@ -155,6 +170,21 @@
 			path = flashcardUITests;
 			sourceTree = "<group>";
 		};
+		4A92B87C1D686EFF00ED3CE3 /* Algebra */ = {
+			isa = PBXGroup;
+			children = (
+				4A92B8701D686E9D00ED3CE3 /* learnViewController.h */,
+				4A92B8711D686E9D00ED3CE3 /* learnViewController.m */,
+				4A92B8731D686EB700ED3CE3 /* cardsViewController.h */,
+				4A92B8741D686EB700ED3CE3 /* cardsViewController.m */,
+				4A92B8761D686EC300ED3CE3 /* quizViewController.h */,
+				4A92B8771D686EC300ED3CE3 /* quizViewController.m */,
+				4A92B8791D686ED100ED3CE3 /* ebookViewController.h */,
+				4A92B87A1D686ED100ED3CE3 /* ebookViewController.m */,
+			);
+			name = Algebra;
+			sourceTree = "<group>";
+		};
 		97A44FD01D622E6000CC8722 /* SWRevealController */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +207,11 @@
 			isa = PBXGroup;
 			children = (
 				97A44FD01D622E6000CC8722 /* SWRevealController */,
+				4A92B87C1D686EFF00ED3CE3 /* Algebra */,
 				123A607A1D5CEC3D00CECCEC /* FirstViewController.h */,
 				123A607B1D5CEC3D00CECCEC /* FirstViewController.m */,
+				4A92B86B1D685A8000ED3CE3 /* AlgebraViewController.h */,
+				4A92B86C1D685A8000ED3CE3 /* AlgebraViewController.m */,
 				97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */,
 				97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */,
 				97A44FD41D62304900CC8722 /* MenuViewController.h */,
@@ -274,7 +307,6 @@
 				TargetAttributes = {
 					123A60701D5CEC3C00CECCEC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = U2VSJE34JB;
 					};
 					123A60891D5CEC3D00CECCEC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -341,13 +373,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				97903DA71D60D6CF00FF348E /* Help.m in Sources */,
+				4A92B86D1D685A8000ED3CE3 /* AlgebraViewController.m in Sources */,
 				123A607C1D5CEC3D00CECCEC /* FirstViewController.m in Sources */,
 				97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */,
 				123A60791D5CEC3D00CECCEC /* AppDelegate.m in Sources */,
+				4A92B8751D686EB700ED3CE3 /* cardsViewController.m in Sources */,
 				97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */,
 				123A60761D5CEC3D00CECCEC /* main.m in Sources */,
+				4A92B87B1D686ED100ED3CE3 /* ebookViewController.m in Sources */,
+				4A92B8721D686E9D00ED3CE3 /* learnViewController.m in Sources */,
 				97A44FDA1D623A1200CC8722 /* MenuTableViewCell.m in Sources */,
 				97A44FD31D622E7700CC8722 /* SWRevealViewController.m in Sources */,
+				4A92B8781D686EC300ED3CE3 /* quizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
