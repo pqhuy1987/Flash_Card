@@ -40,7 +40,7 @@ typedef enum {
     self.functionTable.dataSource = self;
     self.functionTable.tableFooterView = [[UIView alloc] init];
     self.functionTable.backgroundView = nil;
-    self.functionTable.backgroundColor = UIColorFromRGB(0x19A6FF);
+    self.functionTable.backgroundColor = UIColorFromRGB(0x0074C0);
     // Do any additional setup after loading the view.
 }
 
@@ -102,7 +102,7 @@ typedef enum {
 - (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
-    [headerView setBackgroundColor:UIColorFromRGB(0x19A6FF)];
+    [headerView setBackgroundColor:UIColorFromRGB(0x0074C0)];
     return headerView;
 }
 - (IBAction)onTouchBackButton:(id)sender {
