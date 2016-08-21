@@ -36,27 +36,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SingleTap" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-qf-qRL">
-                                <rect key="frame" x="224" y="335" width="153" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="8BM-DA-Ucg"/>
-                                    <constraint firstAttribute="width" constant="153" id="9hN-8F-C45"/>
-                                    <constraint firstAttribute="width" constant="150" id="Uzb-xx-n0b"/>
-                                    <constraint firstAttribute="height" constant="146" id="cxT-tw-aWs"/>
-                                    <constraint firstAttribute="height" constant="146" id="gVs-5w-0Aq"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="s0C-xL-SdN"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="146" id="v5T-IS-xIq"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8BM-DA-Ucg"/>
-                                        <exclude reference="Uzb-xx-n0b"/>
-                                        <exclude reference="gVs-5w-0Aq"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.45490196078431372" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="4vq-i0-edD"/>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cO-Ba-ZGI"/>
@@ -64,10 +45,6 @@
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QYj-JU-rFu"/>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VeS-If-mjd"/>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="204" id="gap-bO-Upw"/>
-                            <constraint firstItem="3TM-qf-qRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gp1-kb-Av2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3TM-qf-qRL" secondAttribute="bottom" constant="119" id="p6L-lf-7dB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3TM-qf-qRL" secondAttribute="bottom" constant="129" id="uQd-hm-Fhl"/>
-                            <constraint firstItem="3TM-qf-qRL" firstAttribute="centerX" secondItem="gGB-Dm-hG4" secondAttribute="centerX" id="vZZ-r0-kzj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -75,8 +52,6 @@
                                 <exclude reference="5cO-Ba-ZGI"/>
                                 <exclude reference="QYj-JU-rFu"/>
                                 <exclude reference="gap-bO-Upw"/>
-                                <exclude reference="gp1-kb-Av2"/>
-                                <exclude reference="uQd-hm-Fhl"/>
                             </mask>
                         </variation>
                     </view>
@@ -370,7 +345,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SingleTap" width="128" height="128"/>
         <image name="previous" width="24" height="20"/>
     </resources>
 </document>
