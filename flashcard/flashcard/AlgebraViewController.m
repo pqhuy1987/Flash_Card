@@ -89,7 +89,7 @@
     
     //half of the width
     button.layer.cornerRadius = buttonFrame.size.width/2.0f;
-    button.layer.borderColor = UIColorFromRGB(0x0080FF).CGColor;
+    button.layer.borderColor = UIColorFromRGB(0x0074C0).CGColor;
     button.layer.borderWidth = 2.0f;
     [button setImageEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
     
