@@ -25,6 +25,7 @@
 		97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD51D62304900CC8722 /* MenuViewController.m */; };
 		97A44FDA1D623A1200CC8722 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */; };
 		97D79A6C1D5E47170027F5A5 /* MathematicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */; };
+		97EBF52A1D6A20E9008426F1 /* MathematicsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EBF5291D6A20E9008426F1 /* MathematicsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		97D79A6A1D5E47170027F5A5 /* MathematicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathematicsViewController.h; sourceTree = "<group>"; };
 		97D79A6B1D5E47170027F5A5 /* MathematicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathematicsViewController.m; sourceTree = "<group>"; };
+		97EBF5281D6A20E9008426F1 /* MathematicsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathematicsTableViewCell.h; sourceTree = "<group>"; };
+		97EBF5291D6A20E9008426F1 /* MathematicsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathematicsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 			children = (
 				97A44FD81D623A1200CC8722 /* MenuTableViewCell.h */,
 				97A44FD91D623A1200CC8722 /* MenuTableViewCell.m */,
+				97EBF5281D6A20E9008426F1 /* MathematicsTableViewCell.h */,
+				97EBF5291D6A20E9008426F1 /* MathematicsTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				4A92B8751D686EB700ED3CE3 /* cardsViewController.m in Sources */,
 				97A44FD61D62304900CC8722 /* MenuViewController.m in Sources */,
 				123A60761D5CEC3D00CECCEC /* main.m in Sources */,
+				97EBF52A1D6A20E9008426F1 /* MathematicsTableViewCell.m in Sources */,
 				4A92B87B1D686ED100ED3CE3 /* ebookViewController.m in Sources */,
 				4A92B8721D686E9D00ED3CE3 /* learnViewController.m in Sources */,
 				97A44FDA1D623A1200CC8722 /* MenuTableViewCell.m in Sources */,

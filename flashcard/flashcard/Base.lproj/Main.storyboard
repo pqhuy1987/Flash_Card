@@ -56,7 +56,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.098933847110000001" green="0.65180905430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="4vq-i0-edD"/>
                             <constraint firstItem="gGB-Dm-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cO-Ba-ZGI"/>
@@ -117,7 +117,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sge-6n-SU6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.45490196078431372" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="6wU-sa-R4L" kind="relationship" relationship="rootViewController" id="wTI-Eo-3q9"/>
@@ -150,7 +150,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P8M-Zk-9Hj" id="7hR-Eb-Lix">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-Gn-Kue">
@@ -170,7 +170,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -195,7 +195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215690000001" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="functionTable" destination="kYo-fw-JGr" id="bF5-Il-LVW"/>
@@ -313,35 +313,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwF-Bv-7q0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b9o-uk-oYw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xk1-5B-qrb" userLabel="contentView">
-                                        <rect key="frame" x="-1" y="0.0" width="601" height="600"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Xk1-5B-qrb" firstAttribute="leading" secondItem="dwF-Bv-7q0" secondAttribute="leading" constant="-1" id="9Me-93-oQk"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xk1-5B-qrb" secondAttribute="trailing" id="FWe-M8-zAs"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xk1-5B-qrb" secondAttribute="bottom" id="bC0-Ia-1zj"/>
-                                    <constraint firstItem="Xk1-5B-qrb" firstAttribute="top" secondItem="dwF-Bv-7q0" secondAttribute="top" id="cdy-TX-wVu"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mathematicsCell" rowHeight="81" id="vnw-Th-NlD" customClass="MathematicsTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vnw-Th-NlD" id="izh-29-P9S">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vwj-Br-mtL">
+                                                    <rect key="frame" x="31" y="15" width="50" height="50.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Function Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-Yb-7eH">
+                                                    <rect key="frame" x="99" y="17" width="339" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.4549019608" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Decription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvl-Pr-sKw">
+                                                    <rect key="frame" x="98" y="42" width="379" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.4549019608" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.0" green="0.4549019608" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="decriptionLabel" destination="Xvl-Pr-sKw" id="2SH-kX-K71"/>
+                                            <outlet property="funcImageView" destination="vwj-Br-mtL" id="JT8-8G-lgX"/>
+                                            <outlet property="funcNameLabel" destination="9dD-Yb-7eH" id="yMU-Bt-ubD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Xk1-5B-qrb" firstAttribute="width" secondItem="Rd8-nC-IOW" secondAttribute="width" constant="1" id="H97-Fd-9Kn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dwF-Bv-7q0" secondAttribute="trailing" constant="-20" id="O31-dH-BaA"/>
-                            <constraint firstItem="VRO-lv-Uha" firstAttribute="top" secondItem="dwF-Bv-7q0" secondAttribute="bottom" id="YEW-2s-Lko"/>
-                            <constraint firstItem="Xk1-5B-qrb" firstAttribute="height" secondItem="Rd8-nC-IOW" secondAttribute="height" priority="250" id="bok-ZI-Raq"/>
-                            <constraint firstItem="dwF-Bv-7q0" firstAttribute="leading" secondItem="Rd8-nC-IOW" secondAttribute="leadingMargin" constant="-20" id="csL-68-kM9"/>
-                            <constraint firstItem="dwF-Bv-7q0" firstAttribute="top" secondItem="Rd8-nC-IOW" secondAttribute="topMargin" id="xcw-LF-exN"/>
+                            <constraint firstItem="b9o-uk-oYw" firstAttribute="top" secondItem="Rd8-nC-IOW" secondAttribute="topMargin" id="HNa-ra-fqJ"/>
+                            <constraint firstItem="VRO-lv-Uha" firstAttribute="top" secondItem="b9o-uk-oYw" secondAttribute="bottom" id="OFJ-AZ-IhP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b9o-uk-oYw" secondAttribute="trailing" constant="-20" id="T1a-zb-mqY"/>
+                            <constraint firstItem="b9o-uk-oYw" firstAttribute="leading" secondItem="Rd8-nC-IOW" secondAttribute="leadingMargin" constant="-20" id="iEO-zI-f5Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vVB-6p-Rbi"/>
                     <connections>
-                        <outlet property="contentView" destination="Xk1-5B-qrb" id="5Ic-ai-pFu"/>
-                        <outlet property="scrollView" destination="dwF-Bv-7q0" id="dHg-HN-LaL"/>
+                        <outlet property="listFuncTableView" destination="b9o-uk-oYw" id="zVb-BL-A1x"/>
                         <segue destination="35B-I8-8gZ" kind="show" identifier="algebraSegue" id="1ZY-KU-1QW"/>
                     </connections>
                 </viewController>
