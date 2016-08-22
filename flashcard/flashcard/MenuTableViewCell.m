@@ -12,13 +12,11 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 - (void)setImage :(NSString *)image withFunction:(NSString *)function withDecription:(NSString *)decription{
@@ -26,6 +24,13 @@
     self.funcIcon.contentMode = UIViewContentModeScaleAspectFit;
     self.functionLabel.text = function;
     self.decriptionLabel.text = decription;
+}
+
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    if (!(self.decriptionLabel.text.length > 0)){
+        self.functionLabel.center = CGPointMake(self.functionLabel.center.x, self.funcIcon.center.y);
+    }
 }
 
 

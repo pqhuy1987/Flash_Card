@@ -8,6 +8,7 @@
 
 #import "AlgebraViewController.h"
 
+
 #define LARGE_BUTTON_SIZE 80
 #define SMALL_BUTTON_SIZE 60
 #define MEDIUM_BUTTON_SIZE 70
@@ -96,5 +97,6 @@
     [self.view addSubview:button];
     return button;
 }
+
 
 @end

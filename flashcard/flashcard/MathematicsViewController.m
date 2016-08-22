@@ -47,14 +47,18 @@ typedef enum {
     [self setupView];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
 - (void)setupView {
     self.title = @"Mathematics";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 25)];
     [leftButton addTarget:self action:@selector(onTouchLeftItem:) forControlEvents:UIControlEventTouchUpInside];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"previous"] forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
-    
     
     UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 25)];
     [rightButton addTarget:self action:@selector(onTouchRightItem:) forControlEvents:UIControlEventTouchUpInside];
@@ -125,6 +129,7 @@ typedef enum {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == Algebra) {
         [self performSegueWithIdentifier:ALGEBRA_SEGUE sender:nil];
+        
     } else if (indexPath.row == DicreteMath ) {
         
     } else if (indexPath.row == Engineering) {
