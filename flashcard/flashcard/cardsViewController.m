@@ -9,6 +9,13 @@
 #import "cardsViewController.h"
 
 @interface cardsViewController ()
+@property (weak, nonatomic) IBOutlet UIView *gestureView;
+@property (weak, nonatomic) IBOutlet UITextView *answerTextView;
+@property (weak, nonatomic) IBOutlet UITextView *questionTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *swipeleftImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nextQuestionTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *swipeupImageView;
+@property (weak, nonatomic) IBOutlet UILabel *seeAnswerTextView;
 
 @end
 
@@ -17,12 +24,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-    // Do any additional setup after loading the view.
+    
+    UISwipeGestureRecognizer * swipeleft  = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft)];
+    swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
+    [self.gestureView addGestureRecognizer:swipeleft];
+    
+    UISwipeGestureRecognizer * swipeup  = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeup)];
+    swipeup.direction=UISwipeGestureRecognizerDirectionUp;
+    [self.gestureView addGestureRecognizer:swipeup];
+
+}
+
+- (void)swipeleft {
+    [self swipeup];
+    self.questionTextView.text = @"Next Question is comming soon...";
+    self.answerTextView.text = @"";
+    self.answerTextView.hidden = YES;
+    self.swipeleftImageView.hidden = YES;
+    self.nextQuestionTextView.hidden = YES;
+}
+
+- (void)swipeup {
+    self.answerTextView.hidden = NO;
+    self.swipeupImageView.hidden = YES;
+    self.seeAnswerTextView.hidden = YES;
 }
 
 - (void)setupView {
     self.title = @"Flash Card";
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    self.answerTextView.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,4 +17,6 @@ alpha:1.0]
 
 @interface Help : NSObject
 
++ (UIActivityIndicatorView *)createSpinView:(UIView *)superView;
+
 @end

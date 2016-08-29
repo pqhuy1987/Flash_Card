@@ -40,7 +40,7 @@ typedef enum {
     self.functionTable.dataSource = self;
     self.functionTable.tableFooterView = [[UIView alloc] init];
     self.functionTable.backgroundView = nil;
-    self.functionTable.backgroundColor = UIColorFromRGB(0x19A6FF);
+    self.functionTable.backgroundColor = UIColorFromRGB(0x0074C0);
     // Do any additional setup after loading the view.
 }
 
@@ -66,21 +66,22 @@ typedef enum {
     cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 
     if (indexPath.row == Share) {
-        [cell setImage:@"share" withFunction:@"Share" withDecription:@""];
+        [cell setImage:@"share" withFunction:@"Share" withDecription:@"Share this page with friends using the apps installed on students Smartphones"];
     } else if (indexPath.row == Reminder) {
-        [cell setImage:@"reminder" withFunction:@"Reminder" withDecription:@""];
+        [cell setImage:@"reminder" withFunction:@"Reminder" withDecription:@"Able to set notification: daily or day and time you would like to be reminded to study"];
     } else if (indexPath.row == ResetCache) {
-        [cell setImage:@"reset" withFunction:@"Reset & Clear Cache" withDecription:@""];
+        [cell setImage:@"reset" withFunction:@"Reset & Clear Cache" withDecription:@"This link will reset all the saved data on the App"];
     } else if (indexPath.row == HelpGuide) {
-        [cell setImage:@"helpguide" withFunction:@"Help Guide" withDecription:@""];
+        [cell setImage:@"helpguide" withFunction:@"Help Guide" withDecription:@"This will be linked to a url page i will create"];
     } else if (indexPath.row == SendFB) {
-        [cell setImage:@"feed" withFunction:@"Send us feedback" withDecription:@""];
+        [cell setImage:@"feed" withFunction:@"Send us feedback" withDecription:@"This will be linked to a url page. i will create"];
     } else if (indexPath.row == Terms) {
-        [cell setImage:@"terms" withFunction:@"Terms & Privacy" withDecription:@""];
+        [cell setImage:@"terms" withFunction:@"Terms & Privacy" withDecription:@"This wil be linked to a url page i will create"];
     } else if (indexPath.row == Version) {
-        [cell setImage:@"app" withFunction:@"App Version" withDecription:@""];
+        NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+        [cell setImage:@"app" withFunction:[NSString stringWithFormat:@"App Version %@", appVersion] withDecription:@""];
     } else if (indexPath.row == CreatedBy) {
-        [cell setImage:@"powerd" withFunction:@"Created by" withDecription:@""];
+        [cell setImage:@"powerd" withFunction:@"Created by EarthBeat Media" withDecription:@""];
     }
     return cell;
 
@@ -102,7 +103,7 @@ typedef enum {
 - (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
-    [headerView setBackgroundColor:UIColorFromRGB(0x19A6FF)];
+    [headerView setBackgroundColor:UIColorFromRGB(0x0074C0)];
     return headerView;
 }
 - (IBAction)onTouchBackButton:(id)sender {
