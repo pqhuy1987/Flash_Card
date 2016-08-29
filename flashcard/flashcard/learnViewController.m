@@ -7,8 +7,11 @@
 //
 
 #import "learnViewController.h"
+@import WebKit;
 
-@interface learnViewController ()
+@interface learnViewController () <WKNavigationDelegate> {
+    UIActivityIndicatorView *spinView;
+}
 
 @end
 
@@ -17,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-    // Do any additional setup after loading the view.
+    [self setupWebView];
 }
 
 - (void)setupView {
@@ -25,19 +28,29 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
+- (void)setupWebView {
+    if (self.title.length > 0) {
+        WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
+        WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:theConfiguration];
+        webView.navigationDelegate = self;
+        NSURL *nsurl = [NSURL URLWithString:@"http://flashcard.earthbeatmedia.com/site/"];
+
+        NSURLRequest *nsrequest = [NSURLRequest requestWithURL:nsurl];
+        [webView loadRequest:nsrequest];
+        [self.view addSubview:webView];
+        spinView = [Help createSpinView:self.view];
+        [spinView startAnimating];
+    }
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [spinView stopAnimating];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
